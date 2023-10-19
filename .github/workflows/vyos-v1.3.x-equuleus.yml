@@ -108,6 +108,7 @@ jobs:
           body: VyOS v${{ env.BUILD_VERSION }} LTS Release
           draft: false
           prerelease: false
+          tag_name: ${{ env.BUILD_VERSION }}
           files: |
             vyos-${{ env.BUILD_VERSION }}-${{ env.BUILD_ARCH }}.iso
             vyos-${{ env.BUILD_VERSION }}-${{ env.BUILD_ARCH }}-qemu.img
